@@ -18,10 +18,16 @@ Sample
 ===============
 
 var nst:NetSpeedTest = new NetSpeedTest();
+
 nst.addEventListener(DataEvent.Data,onTestComplete);
+
 nst.do_test();
 
+
 function onTestComplete(event:DataEvent):void{
+
   trace(event.data);
+  
   //sitename:cost_time;sitename2:cost_time;....
+  
 }
